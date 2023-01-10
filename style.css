@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navigation start */
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    background-color: rgb(41, 41, 119);
+
+
+}
+
+.logo {
+    display: block;
+    padding: 10px;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.navbar ul li button {
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-top: 7px;
+    color: wheat;
+    background-color: rgb(56, 143, 56);
+    padding: 10px;
+}
+
+/* navgation close */
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding-right: 8%;
+    padding-left: 8%;
+    box-sizing: border-box;
+
+}
+
+.banner {
+    background-image: url("https://www.rentbyowner.com/journal/wp-content/uploads/2021/10/cropped-search-banner.jpg");
+    margin-top: 5px;
+    background-position: center;
+    background-size: 100% 400px;
+    height: 400px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* banner content starts */
+.banner-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+
+
+}
+
+.banner-content {
+    position: relative;
+}
+
+.banner-content i {
+    margin-top: -61px;
+    margin-right: 345px;
+    position: relative;
+}
+
+section h3,
+section h2 {
+    color: rgb(0, 0, 0);
+}
+
+section button {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: inline;
+    width: 50%;
+    background: white;
+    border-radius: 5px;
+
+
+}
+
+section input {
+    border-radius: 5px;
+    height: 40px;
+    width: 30%;
+    font-size: 15px;
+    color: #000;
+    border-style: none;
+}
+
+section button i {
+    float: inline-end;
+    position: fixed;
+
+    display: block;
+}
+
+/* banner content close */
+
+/* blog content starts */
+
+.blog-container {
+    display: flex;
+    margin-top: 2rem;
+    height: 88%;
+    gap: 6rem;
+
+}
+
+/* blog left side column with image and descrption */
+#myInput {
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    width: 40%;
+    position: relative;
+}
+
+.category-column h1 {
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex;
+    align-items: left;
+    background-color: #cacaca;
+    margin-bottom: 10px;
+    border-radius: 8px;
+
+}
+
+.card-container div {
+    margin: 5px;
+    text-align: left;
+}
+
+/* category section starts */
+
+
+
+.category-container div {
+    flex: 1;
+}
+
+
+
+.accordion {
+    display: block;
+    width: 338px;
+    padding: 4px;
+    margin-bottom: 0px;
+}
+
+.accordion-content {
+
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    /* overflow-y: auto; */
+    transition: 0.4;
+    border-radius: 5px;
+
+}
+
+.accordion.active .accordion-content {
+    height: 155px;
+    padding: 5px;
+    background-color: #cacaca;
+    width: inherit;
+}
+
+/* category section close */
+
+/* pagination starts */
+.pagination {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+
+
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* pagination close */
+
+/* dropdown for navigation bar starts */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 250px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+.verticalLine {
+    height: 300px;
+    border-right: 1px solid #000900;
+    position: center;
+    right: 50%;
+}
+
+.drp-down-col p {
+    color: #3e8e41;
+    padding: 8px;
+}
+
+.drp-col {
+    display: flex;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* dropdown for navbar end */
+
+
+/* footer section */
+
+/* footer-column-1 star */
+.footer-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.find-place-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.find-place-col ul li {
+    list-style: none;
+    padding: 5px;
+
+}
+
+.find-place-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    gap: 200px;
+}
+
+.find-place-card li a {
+    text-decoration: none;
+    padding: 8px;
+}
+
+/* footer-column-1 end */
+
+/* footer-column-2  start*/
+
+.footer-column-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.footer-about ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-about ul li {
+    list-style: none;
+    padding: 5px;
+
+}
+
+.footer-about ul li a {
+    text-decoration: none;
+
+}
+
+/* Support section  */
+.footer-support ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-support ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.footer-support ul li a {
+    text-decoration: none;
+
+}
+
+/* footer-column-2  closed*/
+
+/* footer-column-3  starts*/
+.footer-column-3 {
+    margin-top: 0 auto;
+}
+
+.footer-column-3 ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-column-3 ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.footer-column-3 ul li a {
+    text-decoration: none;
+
+}
+
+/* first-sooter-closed */
+
+/* second-footer-start */
+
+.second-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* social media icons starts
+ */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+/* social media icons closed
+ */
+
+
+.privacy-terms {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.all-rights {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+
+
+    .banner {
+        background-image: url("https://www.rentbyowner.com/journal/wp-content/uploads/2021/10/cropped-search-banner.jpg");
+        margin-top: 5px;
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+
+
+    }
+
+    center input {
+        border-radius: 5px;
+        height: 30px;
+        width: 30%;
+        font-size: 10px;
+        color: #000;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        height: 88%;
+    }
+
+    .card-container h1 {
+        margin-top: -8px;
+        padding: 6px;
+
+    }
+
+    .category-col h1 {
+        margin-bottom: 10px;
+    }
+
+
+    .category-container .country {
+        display: block;
+
+        align-items: center;
+        padding: 12px;
+        justify-content: space-evenly;
+        gap: 200px;
+        background-color: #caca;
+    }
+
+
+
+
+}
+
+/* shimmer class */
+
+.shimmer-item {
+    display: flex;
+    background-color: #d1cdcd;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Accordion-section-category-counry -starts */
+
+
+.accordion__label,
+.accordion__content {
+    padding: 14px 20px;
+}
+
+.accordion__label {
+    display: block;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+}
+
+.accordion__label:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion__content {
+    background: white;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+
+.accordion__input {
+    display: none;
+}
+
+.accordion__input:checked~.accordion__content {
+    display: block;
+}
+
+/* accordion section closed */
